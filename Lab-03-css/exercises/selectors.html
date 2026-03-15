@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Selectors Practice</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+  <h1 id="mainTitle">Selectors Practice</h1>
+
+  <section>
+    <h2>Basic Selectors</h2>
+    <p>Paragraph with element selector.</p>
+    <p class="external">Paragraph with class selector.</p>
+    <div class="box">DIV with class box.</div>
+    <span id="text-span">SPAN with ID selector.</span>
+    <p data-test="yes">Attribute selector ([data-test]).</p>
+  </section>
+
+  <section>
+    <h2>Combinators</h2>
+    <div class="parent">
+      <p>Descendant paragraph (parent p).</p>
+      <div>
+        <p>Child paragraph (parent > p only applies direct children).</p>
+      </div>
+    </div>
+    <h3>Adjacent sibling heading</h3>
+    <p>Adjacent sibling paragraph (h3 + p).</p>
+    <p>General sibling paragraph (h3 ~ p).</p>
+  </section>
+
+  <section>
+    <h2>Pseudo-classes</h2>
+    <a href="https://example.com">Link Example</a><br>
+    <a href="https://example.com/page">Another Link</a><br>
+    <input type="text" placeholder="Focus to style">
+    <input type="tel" placeholder="Disabled input" disabled>
+    <label>
+      <input type="checkbox" checked> Checked box
+    </label>
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pseudo-elements</h2>
+    <p>Inspect this first letter and first line styling.</p>
+    <p>Inspect this pseudo-element content before and after.</p>
+    <div></div> <!-- empty div to show :empty styling -->
+  </section>
+
+</body>
+</html>

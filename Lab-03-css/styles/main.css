@@ -1,0 +1,266 @@
+/* Element selector */
+
+p{
+color:green;
+}
+
+
+/* Class selector */
+
+.external{
+font-weight:bold;
+color:purple;
+}
+
+
+/* ID selector */
+
+#mainTitle{
+color:darkblue;
+}
+
+
+/* Universal selector */
+
+*{
+margin:5px;
+padding:5px;
+}
+
+
+/* Select elements with attribute */
+
+input[type]{
+border:2px solid gray;
+}
+
+
+/* Attribute value selector */
+
+input[type="text"]{
+background-color:lightblue;
+}
+
+
+/* Partial value match */
+
+a[href*="google"]{
+color:red;
+}
+
+
+/* Begins with selector */
+
+a[href^="https"]{
+font-weight:bold;
+}
+
+
+/* Ends with selector */
+
+a[href$=".com"]{
+text-decoration:underline;
+}
+
+
+
+
+
+/* Descendant */
+
+.parent p{
+color:blue;
+}
+
+/* Child */
+
+.parent > p{
+font-size:20px;
+}
+
+/* Adjacent sibling */
+
+h3 + p{
+background-color:yellow;
+}
+
+/* General sibling */
+
+h3 ~ p{
+border:1px solid black;
+}
+
+
+/* link states */
+
+a:link{
+color:blue;
+}
+
+a:visited{
+color:purple;
+}
+
+a:hover{
+color:red;
+}
+
+a:active{
+color:green;
+}
+
+/* form states */
+
+input:focus{
+border:2px solid red;
+}
+
+input:disabled{
+background:gray;
+}
+
+input:checked{
+outline:2px solid green;
+}
+
+/* structural */
+
+p:first-child{
+font-style:italic;
+}
+
+p:last-child{
+font-weight:bold;
+}
+
+li:nth-child(2){
+color:red;
+}
+
+/* content */
+
+div:empty{
+background:red;
+}
+
+p:not(.external){
+background:#eee;
+}
+
+
+
+p::first-letter{
+font-size:30px;
+color:red;
+}
+
+p::first-line{
+font-weight:bold;
+}
+
+p::before{
+content:"★ ";
+}
+
+p::after{
+content:" ✔";
+}
+
+::selection{
+background:black;
+color:white;
+}
+
+.box{
+width:200px;
+padding:20px;
+margin:20px;
+border:2px solid black;
+box-sizing:border-box;
+box-shadow:0 0 10px gray;
+}
+
+
+.transform{
+width:200px;
+height:200px;
+background:red;
+transition:1s;
+}
+
+.transform:hover{
+transform:rotate(45deg) scale(1.2);
+}
+
+
+/* --- Part C: Text and Font Styling --- */
+
+.text-demo {
+/* Exercise 7: Font properties */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1.2rem;
+font-weight: 600;
+font-variant: small-caps;
+
+/* Exercise 8: Text styling */
+color: #333;
+text-align: center;
+text-decoration: underline wavy red;
+text-transform: capitalize;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+
+/* Exercise 9: Text spacing */
+line-height: 1.6;
+letter-spacing: 1px;
+word-spacing: 2px;
+text-indent: 20px;
+}
+
+
+/* --- Part D: Background Styling --- */
+
+.background-demo {
+height: 200px;
+/* Exercise 10 & 11: Backgrounds */
+background-color: #f0f0f0;
+background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background-size: cover;
+background-position: center;
+}
+
+
+/* --- Part E: Image Styling --- */
+
+img.styled-image {
+/* Exercise 12: Dimensions & Borders */
+width: 100%;
+max-width: 300px;
+aspect-ratio: 16/9;
+object-fit: cover;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+/* Filters */
+filter: sepia(30%);
+transition: all 0.3s ease;
+}
+
+img.styled-image:hover {
+/* Exercise 13: Advanced Effects */
+filter: sepia(0%) brightness(1.1);
+transform: scale(1.02);
+}
+
+
+/* --- Part F: Box Model & Transforms --- */
+
+.advanced-box {
+/* Exercise 14 & 15 */
+margin: 20px;
+padding: 20px;
+border: 1px solid #ccc;
+outline: 2px dashed #999;
+outline-offset: 4px;
+background-color: white;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}

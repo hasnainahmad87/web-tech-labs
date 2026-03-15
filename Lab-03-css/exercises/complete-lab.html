@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete CSS Lab</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/typography.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/effects.css">
+  <link rel="stylesheet" href="../styles/lab.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="../index.html">Home</a>
+    <a href="#task4">Image Portfolio</a>
+    <a href="#task5">Buttons</a>
+    <a href="#task6">Form</a>
+    <a href="#task7">Cards</a>
+    <a href="#task8">Menu</a>
+    <a href="#task9">Transforms</a>
+    <a href="#task10">Effects</a>
+  </header>
+
+  <main class="portfolio-page">
+    <h1>Complete Lab 4–13</h1>
+
+    <section id="task4">
+      <h2>Task 4: Image Styling Portfolio</h2>
+      <div class="portfolio">
+        <div class="overlay"><img src="../images/backgrounds/igor-costa-2Bjo1lzZlHc-unsplash.jpg" alt="Gallery image 1"><span>Nature</span></div>
+        <div class="overlay"><img src="../images/backgrounds/komorebi-photo-h0EzoULowXI-unsplash.jpg" alt="Gallery image 2"><span>City</span></div>
+        <div class="overlay"><img src="../images/backgrounds/igor-costa-2Bjo1lzZlHc-unsplash.jpg" alt="Gallery image 3"><span>Beach</span></div>
+      </div>
+    </section>
+
+    <section id="task5">
+      <h2>Task 5: Button Styling Collection</h2>
+      <div class="btn-set">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-round">Rounded</button>
+        <button class="btn btn-large btn-primary">Large</button>
+        <button class="btn btn-small btn-secondary">Small</button>
+        <button class="btn btn-primary" disabled>Disabled</button>
+      </div>
+    </section>
+
+    <section id="task6">
+      <h2>Task 6: Form Styling</h2>
+      <form class="form-card" onsubmit="event.preventDefault(); this.querySelector('.result').textContent='Submitted!';">
+        <label>Name</label>
+        <input type="text" placeholder="Full name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Email address" required>
+
+        <label>Category</label>
+        <select>
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>Developer</option>
+        </select>
+
+        <label>Message</label>
+        <textarea rows="3" placeholder="Write your message"></textarea>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+        <p class="result" style="margin-top:0.8rem;color:#065f46;font-weight:600"></p>
+      </form>
+
+      <div class="form-card">
+        <p class="success-msg">Success style example</p>
+        <input class="error" placeholder="Validation error field">
+      </div>
+    </section>
+
+    <section id="task7">
+      <h2>Task 7: Card Component Design</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img src="../images/gallery/img1.jpg" alt="Card 1">
+          <div class="card-content">
+            <h3>Product A</h3>
+            <p>Clean product description with clear spacing.</p>
+            <a class="cta" href="#">View</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../images/gallery/img2.jpg" alt="Card 2">
+          <div class="card-content">
+            <h3>Service B</h3>
+            <p>Modern styling, persuasive design layout.</p>
+            <a class="cta" href="#">Details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="task8">
+      <h2>Task 8: Navigation Menu Styling</h2>
+      <div class="navbar">
+        <a class="active" href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Work</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="navbar vertical" style="margin-top:1rem">
+        <a href="#">Dash</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+      </div>
+    </section>
+
+    <section id="task9">
+      <h2>Task 9: CSS Transform Gallery</h2>
+      <div class="transform-gallery">
+        <div class="transform-card rotate"><div class="transform-box"></div><p>Rotate</p></div>
+        <div class="transform-card scale"><div class="transform-box"></div><p>Scale</p></div>
+        <div class="transform-card translate"><div class="transform-box"></div><p>Translate</p></div>
+        <div class="transform-card skew"><div class="transform-box"></div><p>Skew</p></div>
+      </div>
+    </section>
+
+    <section id="task10">
+      <h2>Task 10: Advanced Effects Showcase</h2>
+      <p class="gradient-text">Gradient text effect with clip</p>
+      <p class="clip-text">Clipped text from background image</p>
+      <div class="custom-checkbox">
+        <input type="checkbox" id="cb1"><label for="cb1">Custom checkbox</label>
+      </div>
+      <div class="custom-radio">
+        <input type="radio" id="rd1" name="choice" checked><label for="rd1">Choice 1</label>
+        <input type="radio" id="rd2" name="choice"><label for="rd2">Choice 2</label>
+      </div>
+      <div class="loader"></div>
+      <div class="complex-shadow">Complex shadow block effect</div>
+    </section>
+
+    <section id="task11">
+      <h2>Task 11: Personal Portfolio Styling</h2>
+      <div class="portfolio-card">
+        <img src="../images/gallery/img1.jpg" alt="Profile" style="width:160px;border-radius:8px;">
+        <div class="info">
+          <h3>My Portfolio</h3>
+          <p>Clean typography, spacing, color scheme, and layouts.</p>
+          <ul>
+            <li>Responsive design</li>
+            <li>Image effects</li>
+            <li>Pro user-centered UI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="task12">
+      <h2>Task 12: Course Table Styling</h2>
+      <table class="custom-table">
+        <thead><tr><th>Course</th><th>Type</th><th>Time</th></tr></thead>
+        <tbody>
+          <tr><td>Web Tech</td><td>Lecture</td><td>9:00-10:30</td></tr>
+          <tr><td>CSS Lab</td><td>Practical</td><td>11:00-12:30</td></tr>
+          <tr><td>Project</td><td>Group</td><td>14:00-16:00</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="task13">
+      <h2>Task 13: GitHub Pages Enhancement</h2>
+      <div class="site-enhanced">
+        <p>Site sections form a polished portfolio template with headings, consistent color palette and typography, clear spacing, and visual hierarchy.</p>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
